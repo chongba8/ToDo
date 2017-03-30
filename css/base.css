@@ -1,0 +1,135 @@
+body{
+    background:rgba(0,0,0,.4);
+    width: 100%;
+}
+.container{
+    width:600px;
+    background: yellow;
+    margin: 0 auto;
+    padding: 10px 20px;
+    position: relative;
+    height: 100%;
+
+
+}
+.title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.add-task{
+    margin-bottom: 20px;
+}
+.task-item{
+    padding:5px 10px;
+    background: #fff;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.2);
+    box-shadow: 0 2px 3px rgba(0,0,0,.2);
+    cursor: pointer;
+    border-radius: 3px;
+    -webkit-transition: background 100ms;
+    -moz-transition: background 100ms;
+    -ms-transition: background 100ms;
+    -o-transition: background 100ms;
+    transition: background 100ms;
+}
+.task-item:hover{
+    background: #eee;
+
+}
+button{
+    display:inline-block;
+    border:0;
+}
+.add-task{
+    margin-bottom: 5px;
+    height: 30px;
+    display: -webkit-flex;
+}
+input{
+    background: #ddd;
+}
+input:hover,input:focus{
+    background: #fff;
+}
+input[type=text],input[type=date]{
+    float: left;
+    height: 30px;
+    border:0;
+    border-radius: 3px;
+    flex: 1;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+.add-task button, .remind button{
+    padding:5px 10px;
+    width: 60px;
+    float: right;
+    height: 30px;
+    line-height: 20px;
+    border-radius: 3px;
+    background: #1B8C1F;
+    text-align: center;
+
+}
+.add-task button:hover, .remind button:hover{
+    background: #1CDE23;
+    -webkit-transition: background 100ms;
+    -moz-transition: background 100ms;
+    -ms-transition: background 100ms;
+    -o-transition: background 100ms;
+    transition: background 100ms;
+
+}
+.container ul{
+    width: 100%;
+}
+.task-item{
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.task-item span{
+    display: block;
+    height: 30px;
+}
+.task-item span:first-child{
+    float: left;
+}
+.task-item>span+span{
+    float: right;
+    margin-right: 10px;
+    color:#999;
+}
+.task-item>span+span:hover{
+    color:#222;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.task-detail{
+    width: 50%;
+    padding: 20px 10px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background:#fff;
+    z-index: 999;
+}
+.mask .desc{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    padding: 3px 5px;
+    box-sizing:border-box;
+    margin: 10px 0 10px 0;
+}
+.content{
+    font:14px/20px a
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+
+</head>
+<body>
+<!-- 总容器-->
+<div class="container">
+    <h2 class="title">我的计划列表</h2>
+    <div class="add-task">
+        <input type="text" class="task" placeholder="要做的事记下来吧"/>
+        <button>submit</button>
+    </div>
+    <!-- 清单-->
+    <ul class="task-list">
+
+    </ul>
+    <!-- /清单-->
+
+    <div class="mask" style="display:none;">
+        <!-- 任务详情-->
+        <div class="task-detail">
+            <div class="content"></div>
+            <div contenteditable="true" class="desc">
+
+            </div>
+            <div class="remind">
+                <input type="date"/>
+                <button class="now handin">更新</button>
+            </div>
+        </div>
+        <!-- /任务详情-->
+    </div>
+</div>
+<!-- /总容器-->
+</body>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="js/todo.js"></script>
+</html>
